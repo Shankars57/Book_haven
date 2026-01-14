@@ -8,7 +8,7 @@ const Orders = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8008/api/order/my-orders", {
+      .get("https://book-haven-9rxd.onrender.com/api/order/my-orders", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => setOrders(res.data.orders));
