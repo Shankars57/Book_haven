@@ -9,7 +9,7 @@ const PORT = 8008;
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://book-haven-hazel-psi.vercel.app",
     credentials: true,
   })
 );
