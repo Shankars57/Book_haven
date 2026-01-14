@@ -3,10 +3,12 @@ import useCartStore from "../store/useCartStore";
 import useAuthStore from "../store/useAuthStore";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import api from "../api/axios";
 
 const Checkout = () => {
   const { cartItems, getTotalPrice, clearCart } = useCartStore();
   const { token } = useAuthStore();
+
   const navigate = useNavigate();
 
   const [form, setForm] = useState({
@@ -36,11 +38,15 @@ const Checkout = () => {
       totalAmount: getTotalPrice(),
     };
 
-    await axios.post("http://localhost:8008/api/order", payload, {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    });
+    await axios.post(
+      "https://book-haven-9rxd.onrender.com/api/order",
+      payload,
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
 
     clearCart();
     navigate("/orders");
