@@ -56,7 +56,7 @@ export function Footer() {
             <div className="flex flex-col gap-3">
                <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Link2 className="h-4 w-4" />
-                <span>Portfolio : <a href="https://shankar-portfolio-lac.vercel.app"></a></span>
+                <span><a href="https://shankar-portfolio-lac.vercel.app">Portfolio </a></span>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4" />
