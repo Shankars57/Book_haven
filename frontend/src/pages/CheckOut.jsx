@@ -38,18 +38,25 @@ const Checkout = () => {
       totalAmount: getTotalPrice(),
     };
 
-    await axios.post(
-      "https://book-haven-9rxd.onrender.com/api/order",
-      payload,
-      {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      }
-    );
+    try {
+      const { data } = await axios.post(
+        "https://book-haven-9rxd.onrender.com/api/order",
+        payload,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
 
-    clearCart();
-    navigate("/orders");
+      if (data.success) {
+        toast.success("Order successfully Placed");
+        clearCart();
+        navigate("/orders");
+      }
+    } catch (error) {
+      toast.error(error.message);
+    }
   };
 
   return (
