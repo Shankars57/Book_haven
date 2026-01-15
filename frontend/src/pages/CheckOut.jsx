@@ -3,6 +3,7 @@ import useCartStore from "../store/useCartStore";
 import useAuthStore from "../store/useAuthStore";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import toast from "react-hot-toast";
 import api from "../api/axios";
 
 const Checkout = () => {

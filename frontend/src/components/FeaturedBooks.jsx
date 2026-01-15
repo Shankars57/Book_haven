@@ -125,7 +125,7 @@ const FeaturedBooks = () => {
               className="bg-card border border-border rounded-xl overflow-hidden
                          shadow-warm hover:shadow-elevated transition cursor-pointer"
             >
-              {/* Image */}
+            
               <motion.img
                 src={book.image}
                 alt={book.title}
@@ -134,7 +134,7 @@ const FeaturedBooks = () => {
                 transition={{ duration: 0.4 }}
               />
 
-              {/* Content */}
+           
               <div className="p-5 space-y-3">
                 <h3 className="font-display text-lg font-semibold">
                   {book.title}
