@@ -45,12 +45,6 @@ export function Footer() {
               >
                 Shopping Cart
               </Link>
-              <Link
-                to="/auth"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                My Account
-              </Link>
             </nav>
           </div>
 

@@ -49,17 +49,7 @@ const Auth = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-secondary via-background to-muted">
-      <header className="p-6">
-        <Link
-          to="/"
-          className="inline-flex items-center gap-2 hover:opacity-80 transition"
-        >
-          <BookOpen className="h-6 w-6 text-primary" />
-          <span className="font-display text-lg font-semibold">
-            The Book Haven
-          </span>
-        </Link>
-      </header>
+     
 
       <main className="flex-1 flex items-center justify-center px-4">
         <div className="w-full max-w-md bg-white/30 rounded-lg shadow-elevated p-8">

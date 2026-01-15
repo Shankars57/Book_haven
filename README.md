@@ -3,6 +3,8 @@
 The Book Haven is a full-stack Online Bookstore Web Application where users can browse books, view details, add books to a shopping cart, and place orders securely.
 The project is built using the MERN stack with modern state management and authentication.
 
+Live Link :- https://book-haven-hazel-psi.vercel.app
+
 🚀 Features
 🔐 Authentication
 
@@ -128,7 +130,7 @@ JWT_SECRET=your_jwt_secret
 
 ▶️ How to Run the Project
 1️⃣ Clone the repository
-git clone https://github.com/your-username/the-book-haven.git
+git clone https://github.com/Shankars57/Book_haven.git
 cd the-book-haven
 
 2️⃣ Backend Setup
